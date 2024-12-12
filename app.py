@@ -47,9 +47,9 @@ def get_recommendations(category, cosine_sim=cosine_sim, df=df):
     # Display recommended articles
     if recommendations:
         for i in recommendations:
-            st.write(f"**Category:** {df.iloc[i[0]]['category']}")
-            st.write(f"**Headline:** {df.iloc[i[0]]['headline']}")
-            st.write(f"**Description:** {df.iloc[i[0]]['short_description']}\n")
+            st.write(f"*Category:* {df.iloc[i[0]]['category']}")
+            st.write(f"*Description:* {df.iloc[i[0]]['short_description']}\n")
+            st.write(f"*links:* {df.iloc[i[0]]['links']}")
     else:
         st.warning("No similar articles found within the same category.")
 
@@ -57,7 +57,6 @@ def get_recommendations(category, cosine_sim=cosine_sim, df=df):
 st.title("News Article Recommendations")
 
 category = st.text_input("Enter the category of interest (e.g., environment, politics, u.s news, comedy, parenting, world news, culture art, tech, sport, entertainment, politic, weird news, environment, education, crime, science, wellness, business, style beauty, food drink, medium, queer voice, home living, woman, black voice, travel.etc.):")
-
 
 if st.button("Get Recommendations"):
     if category:
