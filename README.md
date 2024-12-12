@@ -1,7 +1,7 @@
 # News Recommendation Sytem
 This project is a content-based news recommendation system built using Python and Streamlit. It recommends news articles to users based on a specific category they are interested in. The application utilizes a cosine similarity matrix to identify and recommend articles that are most similar to the user's preference. Basing on my dataset these are the categories that can be recommended:u.s news, comedy, parenting, world news, culture art, tech, sport, entertainment, politic, weird news, environment, education, crime, science, wellness, business, style beauty, food drink, medium, queer voice, home living, woman, black voice, travel.
 
-This is the link to the streamlit app: https://newsrecommendationsytemcapstoneproject-dzjzihfmlyrnnyjgoes4lw.streamlit.app/
+This is the link to the streamlit app: https://news-recommendation-system.streamlit.app/
 
 ## Features
   1. Category-Based Recommendations: Enter a category (e.g., politics, sports, 
