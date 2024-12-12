@@ -56,7 +56,8 @@ def get_recommendations(category, cosine_sim=cosine_sim, df=df):
 # Streamlit user interface
 st.title("News Article Recommendations")
 
-category = st.text_input("Enter the category of interest (e.g., 'environment', 'politics', etc.):")
+category = st.text_input("Enter the category of interest (e.g., environment, politics, u.s news, comedy, parenting, world news, culture art, tech, sport, entertainment, politic, weird news, environment, education, crime, science, wellness, business, style beauty, food drink, medium, queer voice, home living, woman, black voice, travel.etc.):")
+
 
 if st.button("Get Recommendations"):
     if category:
