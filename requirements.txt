@@ -2,7 +2,9 @@ pandas
 numpy==1.26.3
 scikit-learn
 joblib
+
 faiss-cpu
 spacy
+
 
 
